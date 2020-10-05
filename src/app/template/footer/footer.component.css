@@ -1,0 +1,16 @@
+p {
+  font-size: 15px;
+  margin: 0;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: stretch;
+  background-color: var(--color-assets);
+  color: var(--color-text-tercero);
+  /*padding-top: 25px;
+      padding-bottom:  25px;*/
+}

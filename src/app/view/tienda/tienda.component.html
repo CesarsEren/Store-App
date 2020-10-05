@@ -1,0 +1,29 @@
+<section class="container animate__animated animate__fadeIn">
+    <span class="spantitle">Tienda</span>
+    <section>
+
+        <section class="buscador">
+            <!--<span class="spanitems">Mostrando 8 de {{productos.length}}</span>-->
+            <span class="spanitems"> Mostrando {{(p - 1) * itemsPerPage + 1}} - {{p * itemsPerPage}} de
+                {{productos.length}}</span>
+            <input type="text" name="" id="">
+        </section>
+        <div id="items-list">
+            <article
+                *ngFor="let producto of productos | paginate: { itemsPerPage:itemsPerPage, currentPage: p };let i = index"
+                (click)="goToproducto(producto.code)">
+                <img src="{{producto.img}}"   alt="">
+                <img src="{{producto.img2}}"   alt="">
+                <ul>
+                    <li class="card-nombre">{{producto.nombre}}</li>
+                    <li class="card-categoria">{{producto.categoria}}</li>
+                    <li class="card-precio">{{producto.precio}}</li>
+                </ul>
+            </article>
+        </div>
+        <pagination-controls (pageChange)=" p=$event" maxSize="9" directionLinks="true" autoHide="true"
+            responsive="true" previousLabel="Anterior" nextLabel="Siguiente" screenReaderPaginationLabel="Pagination"
+            screenReaderPageLabel="page" screenReaderCurrentLabel="You're on page">
+        </pagination-controls>
+    </section>
+</section>

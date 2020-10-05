@@ -1,1 +1,59 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --color-texto-principal: #407cff;
+  --color-texto-secundario: #000;
+  --color-principal: #000;
+  --color-secundario: #000;
+  --color-text-tercero: #fff;
+  --color-assets: #3c599b;
+  --color-assets-secundario: #407cff;
+  --color-background-primary: #000;
+}
+
+* {
+  font-family: "Poppins";
+  margin: 0px;
+  padding: 0px;
+}
+
+/*#2299E8*/
+hr {
+  border: 2px solid var(--color-assets);
+  background-color: var(--color-assets);
+  border-radius: 2px;
+  /*height: 2px;
+  background-color: var(--color-assets);
+  /*#E4E4E4*/
+}
+section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.container {
+  width: 60%;
+  margin: auto;
+}
+.spantitle {
+  display: none;
+  font-size: 30px;
+}
+
+@media (max-width: 920px) {
+  .spantitle {
+    display: block;
+  }
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1366px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 90%;
+  }
+}

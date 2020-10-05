@@ -1,0 +1,17 @@
+.center {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: stretch;
+}
+.btn {
+  border: 1px solid none;
+  border-radius: 15px;
+  padding: 10px 80px 10px 80px;
+  color: white;
+  background-color: var(--color-assets);
+  text-decoration: none;
+  text-decoration-color: none;
+}

@@ -1,0 +1,11 @@
+.spantitle {
+  display: block;
+}
+hr {
+  width: 100px;
+  height: 5px;
+  color: black;
+}
+p {
+  color: var(--color-texto-principal);
+}

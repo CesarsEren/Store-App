@@ -1,0 +1,52 @@
+article img:nth-child(2) {
+  display: none;
+}
+
+article:hover img:nth-child(1) {
+  display: none;
+}
+article:hover img:nth-child(2) {
+  display: inline;
+}
+aside img {
+  cursor: pointer;
+}
+div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  /*align-content: center;*/
+  align-content: center;
+}
+article {
+  padding: 20px;
+}
+.card-nombre {
+  font-size: 30px;
+  font-weight: bold;
+}
+.card-categoria {
+  color: var(--color-assets);
+  font-weight: lighter;
+}
+.card-precio {
+  border: 2px solid var(--color-assets);
+  border-radius: 5px;
+  color: white;
+  background-color: var(--color-assets);
+}
+
+article ul {
+  width: 100%;
+  display: block;
+}
+article ul li {
+  text-decoration: none;
+  list-style: none;
+  width: 100%;
+  display: block;
+  margin-bottom: 15px;
+  text-align: center;
+}

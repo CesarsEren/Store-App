@@ -1,0 +1,21 @@
+<section>
+    <aside class="container">
+        <img (click)="goback()" src="/assets/img/back.png" alt="">
+    </aside>
+</section>
+<section>
+    <div class="container">
+
+        <article>
+            <img  width="350px" src="{{producto.img}}"   alt="">
+            <img width="350px" src="{{producto.img2}}"  alt="">
+        </article>
+        <article>
+            <ul>
+                <li class="card-nombre">{{producto.nombre}}</li>
+                <li class="card-categoria">{{producto.categoria}}</li>
+                <li class="card-precio">{{producto.precio}}</li>
+            </ul>
+        </article>
+    </div>
+</section>

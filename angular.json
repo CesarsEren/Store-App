@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "store-app": {
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/store-app",
+            "outputPath": "../public",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -24,9 +24,13 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "./node_modules/aos/dist/aos.css",
+              "./node_modules/animate.css/animate.min.css",
+              "src/styles.css"              
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/aos/dist/aos.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -88,9 +92,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "./node_modules/aos/dist/aos.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/aos/dist/aos.js"
+            ]
           }
         },
         "lint": {
@@ -119,6 +126,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "store-app"
+    }
+  },
+  "defaultProject": "store-app",
+  "cli": {
+    "analytics": "3d5d5f7c-3226-48df-a122-a11e770ef469"
+  }
 }
